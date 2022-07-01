@@ -1,4 +1,6 @@
 # LibC Bot written in python
+https://twitter.com/LibCBot1
+
 Tweets a explanation of an stdlib C function every 30 minutes
 
 The documentation for the C functions was taken from taken from https://www.ibm.com/docs/en/i/7.1?topic=extensions-standard-c-library-functions-table-by-name and formatted into JSON in functions.json.
