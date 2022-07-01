@@ -1,0 +1,1973 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table id="statable" summary="" frame="border" rules="all" class="bx--data-table" width="100%" border="1">
+        <caption><a href="/docs/en/ssw_ibm_i_71/rtref/sc41560703.htm#FT_Table_36">Table 36. Standard C Library Functions</a></caption>
+        <thead valign="bottom">
+        <tr>
+        <th id="wq779" width="22%" valign="bottom" align="left"><div class="bx--table-header-label">Function</div></th>
+        <th id="wq780" width="14%" valign="bottom" align="left"><div class="bx--table-header-label">System Include File</div></th>
+        <th id="wq781" width="28%" valign="bottom" align="left"><div class="bx--table-header-label">Function Prototype</div></th>
+        <th id="wq782" width="35%" valign="bottom" align="left"><div class="bx--table-header-label">Description</div></th>
+        </tr>
+        </thead>
+        <tbody valign="top">
+        <tr>
+        <td headers="wq779" valign="top" align="left">abort</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void abort(void);</td>
+        <td headers="wq782" valign="top" align="left">Stops a program abnormally.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">abs</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int abs(int <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the absolute value of an integer
+        argument <em>n</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">acos</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double acos(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the arc cosine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">asctime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *asctime(const struct tm *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the <em>time</em> that
+        is stored as a structure to a character string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">asctime_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *asctime_r (const struct tm *tm,
+        char *buf);</td>
+        <td headers="wq782" valign="top" align="left">Converts <var class="pv">tm</var> that is stored as a
+        structure to a character string. (Restartable version of asctime.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">asin</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double asin(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the arc sine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">assert</td>
+        <td headers="wq780" valign="top" align="left">assert.h</td>
+        <td headers="wq781" valign="top" align="left">void assert(int <em>expression</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints a diagnostic message and ends the
+        program if the expression is false.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atan</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double atan(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the arc tangent of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atan2</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double atan2(double <em>y</em>, double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the arc tangent of <em>y/x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atexit</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int atexit(void (*<em>func</em>)(void));</td>
+        <td headers="wq782" valign="top" align="left">Registers a function to be called at normal
+        termination.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atof</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">double atof(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>string</em> to
+        a double-precision floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atoi</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int atoi(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>string</em> to
+        an integer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">atol</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">long int atol(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>string</em> to
+        a long integer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">bsearch</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void *bsearch(const void *<em>key</em>, const void *<em>base</em>,
+        size_t <em>num</em>, size_t <em>size</em>,
+        int (*<em>compare</em>) (const void *<em>element1</em>, const void *<em>element2</em>));</td>
+        <td headers="wq782" valign="top" align="left">Performs a binary search on an array of <em>num</em> elements, each of <em>size</em> bytes.
+        The array must be sorted in ascending order by the function pointed to by <em>compare</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">btowc</td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t btowc(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determines whether <em>c</em> constitues
+        a valid multibyte character in the initial shift state.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">calloc</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void *calloc(size_t <em>num</em>, size_t <em>size</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reserves storage space for an array of <em>num</em> elements, each of size <em>size</em>,
+        and initializes the values of all elements to 0.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">catclose<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">nl_types.h</td>
+        <td headers="wq781" valign="top" align="left">int catclose (nl_catd catd);</td>
+        <td headers="wq782" valign="top" align="left">Closes a previously opened message catalog.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">catgets<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">nl_types.h</td>
+        <td headers="wq781" valign="top" align="left">char *catgets(nl_catd catd, int
+        set_id, int msg_id, const char *s);</td>
+        <td headers="wq782" valign="top" align="left">Retrieves a message from an open message
+        catalog.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">catopen<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">nl_types.h</td>
+        <td headers="wq781" valign="top" align="left">nl_catd catopen (const char *name,
+        int oflag);</td>
+        <td headers="wq782" valign="top" align="left">Opens a message catalog, which must be done
+        before a message can be retrieved.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ceil</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double ceil(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the double value representing
+        the smallest integer that is greater than or equal to <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">clearerr</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">void clearerr(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Resets the error indicators and the end-of-file
+        indicator for <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">clock</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">clock_t clock(void);</td>
+        <td headers="wq782" valign="top" align="left">Returns the processor time that has elapsed
+        since the job was started.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">cos</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double cos(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the cosine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">cosh</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double cosh(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the hyperbolic cosine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ctime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *ctime(const time_t *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>time</em> to
+        a character string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ctime64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *ctime64(const time64_t *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>time</em> to
+        a character string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ctime_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *ctime_r(const time_t *time,
+        char *buf);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>time</em> to
+        a character string. (Restartable version of ctime.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ctime64_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *ctime64_r(const time64_t *time,
+        char *buf);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>time</em> to
+        a character string. (Restartable version of ctime64.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">difftime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">double difftime(time_t <em>time2</em>, time_t <em>time1</em>);</td>
+        <td headers="wq782" valign="top" align="left">Computes the difference between <em>time2</em> and <em>time1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">difftime64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">double difftime64(time64_t <em>time2</em>, time64_t <em>time1</em>);</td>
+        <td headers="wq782" valign="top" align="left">Computes the difference between <em>time2</em> and <em>time1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">div</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">div_t div(int <em>numerator</em>, int <em>denominator</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the quotient and remainder of
+        the division of <em>numerator</em> by <em>denominator</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">erf</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double erf(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the error function of  <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">erfc</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double erfc(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the error function for large values
+        of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">exit</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void exit(int <em>status</em>);</td>
+        <td headers="wq782" valign="top" align="left">Ends a program normally.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">exp</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double exp(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the exponential function of a
+        floating-point argument <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fabs</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double fabs(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the absolute value of a floating-point
+        argument <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fclose</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fclose(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Closes the specified <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fdopen<sup>5</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">FILE *fdopen(int <var class="pv">handle</var>,
+        const char <var class="pv">*type</var>);</td>
+        <td headers="wq782" valign="top" align="left">Associates an input or output stream with
+        the file identified by handle.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">feof</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int feof(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests whether the end-of-file flag is set
+        for a given <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ferror</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int ferror(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests for an error indicator in reading from
+        or writing to <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fflush<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fflush(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Writes the contents of the buffer associated
+        with the output <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fgetc<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fgetc(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads a single unsigned character from the
+        input <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fgetpos<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fgetpos(FILE *<em>stream</em>, fpos_t *<em>pos</em>);</td>
+        <td headers="wq782" valign="top" align="left">Stores the current position of the file pointer
+        associated with <em>stream</em> into the object pointed to
+        by <em>pos</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fgets<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">char *fgets(char *<em>string</em>, int <em>n</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads a string from the input <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fgetwc<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t fgetwc(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads the next multibyte character from the
+        input stream pointed to by <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fgetws<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wchar_t *fgetws(wchar_t *<em>wcs</em>,  int <em>n</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads wide characters from the stream into
+        the array pointed to by <em>wcs</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fileno<sup>5</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fileno(FILE <var class="pv">*stream</var>);</td>
+        <td headers="wq782" valign="top" align="left">Determines the file handle currently associated
+        with <var class="pv">stream</var>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">floor</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double floor(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the floating-point value representing
+        the largest integer less than or equal to <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fmod</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double fmod(double <em>x</em>,
+        double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the floating-point remainder of <em>x/y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fopen</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">FILE *fopen(const char *<em>filename</em>, const char *<em>mode</em>);</td>
+        <td headers="wq782" valign="top" align="left">Opens the specified file.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fprintf(FILE *<em>stream</em>, const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and prints characters and values
+        to the output <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fputc<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fputc(int <em>c</em>,
+        FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints a character to the output <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fputs<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fputs(const char *<em>string</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies a string to the output <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fputwc<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t fputwc(wchar_t <em>wc</em>,  FILE <em>*stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wide character <em>wc</em> to a multibyte character and writes it to the output stream pointed
+        to by  <em>stream</em> at the current position.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fputws<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int fputws(const wchar_t *<em>wcs</em>, FILE  <em>*stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wide-character string <em>wcs</em> to a multibyte-character string and writes it to <em>stream</em> as a multibyte character string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fread</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">size_t fread(void *<em>buffer</em>, size_t <em>size</em>, size_t <em>count</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads up to <var class="pv">count</var> items of <em>size</em> length from the input <em>stream</em>, and stores
+        them in <em>buffer</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">free</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void free(void *<em>ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Frees a block of storage.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">freopen</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">FILE *freopen(const char *<em>filename</em>, const char *<em>mode</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Closes <em>stream</em>, and
+        reassigns it to the file specified.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">frexp</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double frexp(double <em>x</em>, int *<em>expptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Separates a floating-point number into its
+        mantissa and exponent.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fscanf(FILE *<em>stream</em>, const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from <em>stream</em> into locations given by <em>arg-list</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fseek<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fseek(FILE *<em>stream</em>, long int <em>offset</em>, int <em>origin</em>);</td>
+        <td headers="wq782" valign="top" align="left">Changes the current file position associated
+        with <em>stream</em> to a new location.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fsetpos<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int fsetpos(FILE *<em>stream</em>, const fpos_t *<em>pos</em>);</td>
+        <td headers="wq782" valign="top" align="left">Moves the current file position to a new
+        location determined by <em>pos</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ftell<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">long int ftell(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Gets the current position of the file pointer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fwide<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int fwide(FILE <em>*stream</em>, int <em>mode</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determines the orientation of the stream
+        pointed to by <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fwprintf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int fwprintf(FILE <em>*stream</em>, const wchar_t <em>*format</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Writes output to the stream pointed to by <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fwrite</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">size_t fwrite(const void *<em>buffer</em>, size_t <em>size</em>,size_t <em>count</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Writes up to <em>count</em> items
+        of <em>size</em> length from <em>buffer</em> to <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">fwscanf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int fwscanf(FILE <em>*stream</em>, const wchar_t <em>*format</em>, <em>arg-list</em>)</td>
+        <td headers="wq782" valign="top" align="left">Reads input from the stream pointed to by <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gamma</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double gamma(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Computes the Gamma Function</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">getc<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int getc(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads a single character from the input <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">getchar<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int getchar(void);</td>
+        <td headers="wq782" valign="top" align="left">Reads a single character from <em>stdin.</em></td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">getenv</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">char *getenv(const char *<em>varname</em>);</td>
+        <td headers="wq782" valign="top" align="left">Searches environment variables for <em>varname</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gets</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">char *gets(char *<em>buffer</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads a string from <em>stdin</em>, and stores it in <em>buffer</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">getwc<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t getwc(FILE <em>*stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads the next multibyte character from  <em>stream</em>, converts it to a wide character and advances the
+        associated file position indicator for <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">getwchar<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wint_t getwchar(void);</td>
+        <td headers="wq782" valign="top" align="left">Reads the next multibyte character from stdin,
+        converts it to a wide character, and advances the associated file position
+        indicator for stdin.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gmtime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *gmtime(const time_t *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <em>time</em> value
+        to a structure of type tm.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gmtime64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *gmtime64(const time64_t *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <em>time</em> value
+        to a structure of type tm.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gmtime_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *gmtime_r (const time_t *time,
+        struct tm *result);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <var class="pv">time</var> value to a structure
+        of type tm. (Restartable version of gmtime.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">gmtime64_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *gmtime64_r (const time64_t *time,
+        struct tm *result);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <var class="pv">time</var> value to a structure
+        of type tm. (Restartable version of gmtime64.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">hypot</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double hypot(double <em>side1</em>, double <em>side2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the hypotenuse of a right-angled
+        triangle with sides of length <em>side1</em> and <em>side2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isalnum</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isalnum(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is alphanumeric.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isalpha</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isalpha(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is alphabetic.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isascii</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isascii(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is within
+        the 7-bit US-ASCII range.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iscntrl</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iscntrl(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a control
+        character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isdigit</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isdigit(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a decimal
+        digit.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isgraph</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isgraph(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a printable
+        character excluding the space.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">islower</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int islower(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a lowercase
+        letter.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isprint</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isprint(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a printable
+        character including the space.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ispunct</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int ispunct(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a punctuation
+        character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isspace</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isspace(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a whitespace
+        character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isupper</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isupper(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is an
+        uppercase letter.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswalnum<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswalnum (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any alphanumeric wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswalpha<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswalpha (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any alphabetic wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswcntrl<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswcntrl (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Tests for any control wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswctype<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswctype(wint_t wc, wctype_t wc_prop);</td>
+        <td headers="wq782" valign="top" align="left">Determines whether or not the wide character
+        wc has the property wc_prop.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswdigit<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswdigit (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any decimal-digit wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswgraph<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswgraph (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any printing wide character except
+        for the wide-character space.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswlower<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswlower (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any lowercase wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswprint<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswprint (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any printing wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswpunct<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswpunct (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Test for a wide non-alphanumeric, non-space
+        character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswspace<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswspace (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any wide character that corresponds
+        to an implementation-defined set of wide characters for which iswalnum is
+        false.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswupper<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswupper (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any uppercase wide character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">iswxdigit<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int iswxdigit (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Checks for any hexadecimal digit character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">isxdigit<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">int isxdigit(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Tests if <em>c</em> is a hexadecimal
+        digit.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">j0</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double j0(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        first kind of order 0.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">j1</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double j1(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        first kind of order 1.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">jn</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double jn(int <em>n</em>,
+        double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        first kind of order <var class="pv">n</var>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">labs</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">long int labs(long int <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the absolute value of <em>n</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ldexp</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double ldexp(double <em>x</em>, int <em>exp</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns the value of <em>x</em> multiplied by (2 to the power of <em>exp</em>).</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ldiv</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">ldiv_t ldiv(long int <em>numerator</em>, long int <em>denominator</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the quotient and remainder of <em>numerator</em>/<em>denominator</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">localeconv</td>
+        <td headers="wq780" valign="top" align="left">locale.h</td>
+        <td headers="wq781" valign="top" align="left">struct lconv *localeconv(void);</td>
+        <td headers="wq782" valign="top" align="left">Formats numeric quantities in struct lconv
+        according to the current locale.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">localtime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *localtime(const time_t *<em>timeval</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>timeval</em> to
+        a structure of type tm.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">localtime64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *localtime64(const time64_t *<em>timeval</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>timeval</em> to
+        a structure of type tm.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">localtime_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *localtime_r (const time_t *timeval,
+        struct tm *result);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <var class="pv">time</var> value to a structure
+        of type <var class="pv">tm</var>. (Restartable version of localtime.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">localtime64_r</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">struct tm *localtime64_r (const
+        time64_t *timeval, struct tm *result);</td>
+        <td headers="wq782" valign="top" align="left">Converts a <var class="pv">time</var> value to a structure
+        of type <var class="pv">tm</var>. (Restartable version of localtime64.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">log</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double log(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the natural logarithm of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">log10</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double log10(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the base 10 logarithm of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">longjmp</td>
+        <td headers="wq780" valign="top" align="left">setjmp.h</td>
+        <td headers="wq781" valign="top" align="left">void longjmp(jmp_buf <em>env</em>, int <em>value</em>);</td>
+        <td headers="wq782" valign="top" align="left">Restores a stack environment previously set
+        in <em>env</em> by the setjmp function.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">malloc</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void *malloc(size_t <em>size</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reserves a block of storage.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mblen</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int mblen(const char *<em>string</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determines the length of a multibyte character <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbrlen<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int mbrlen (const char *s, size_t
+        n, mbstate_t *ps);</td>
+        <td headers="wq782" valign="top" align="left">Determines the length of a multibyte character.
+        (Restartable version of mblen.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbrtowc<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int mbrtowc (wchar_t *pwc, const
+        char *s, size_t n, mbstate_t *ps);</td>
+        <td headers="wq782" valign="top" align="left">Convert a multibyte character to a wide character
+        (Restartable version of mbtowc.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbsinit<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int mbsinit (const mbstate_t *ps);</td>
+        <td headers="wq782" valign="top" align="left">Test state object <var class="pv">*ps</var> for
+        initial state.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbsrtowcs<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t mbsrtowc (wchar_t *dst, const
+        char **src, size_t len, mbstate_t *ps);</td>
+        <td headers="wq782" valign="top" align="left">Convert multibyte string to a wide character
+        string. (Restartable version of mbstowcs.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbstowcs</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">size_t mbstowcs(wchar_t *<em>pwc</em>, const char *<em>string</em>,
+        size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the multibyte characters in <em>string</em> to their corresponding wchar_t codes, and stores
+        not more than <em>n</em> codes in <em>pwc</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mbtowc</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int mbtowc(wchar_t *<em>pwc</em>, const char *<em>string</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Stores the wchar_t code corresponding
+        to the first <em>n</em> bytes of multibyte character <em>string</em> into the wchar_t character <em>pwc</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">memchr</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">void *memchr(const void *<em>buf</em>, int <em>c</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Searches the first <em>count</em> bytes of <em>buf</em> for the first occurrence of <em>c</em> converted to an unsigned character.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">memcmp</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">int memcmp(const void *<em>buf1</em>, const void *<em>buf2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares up to <em>count</em> bytes
+        of <em>buf1</em> and <em>buf2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">memcpy</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">void *memcpy(void *<em>dest</em>, const void *<em>src</em>,
+        size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies <em>count</em> bytes
+        of <em>src</em> to <em>dest</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">memmove</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">void *memmove(void *<em>dest</em>, const void *<em>src</em>,
+        size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies <em>count</em> bytes
+        of <em>src</em> to <em>dest</em>.  Allows copying
+        between objects that overlap.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">memset</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">void *memset(void *<em>dest</em>, int <em>c</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Sets <em>count</em> bytes
+        of <em>dest</em> to a value <em>c</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mktime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">time_t mktime(struct tm *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts local <em>time</em> into
+        calendar time.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">mktime64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">time64_t mktime64(struct tm *<em>time</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts local <em>time</em> into
+        calendar time.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">modf</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double modf(double <em>x</em>,
+        double *<em>intptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Breaks down the floating-point value <em>x</em> into fractional and integral parts.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">nextafter</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double nextafter(double <em>x</em>, double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the next representable value after <em>x</em> in the direction of <em>y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">nextafterl</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">long double nextafterl(long double <em>x</em>, long double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the next representable value after <em>x</em> in the direction of <em>y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">nexttoward</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double nexttoward(double <em>x</em>, long double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the next representable value after <em>x</em> in the direction of <em>y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">nexttowardl</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">long double nexttowardl(long double <em>x</em>, long double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the next representable value after <em>x</em> in the direction of <em>y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">nl_langinfo<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">langinfo.h</td>
+        <td headers="wq781" valign="top" align="left">char *nl_langinfo(nl_item <var class="pv">item</var>);</td>
+        <td headers="wq782" valign="top" align="left">Retrieve from the current locale the string
+        that describes the requested information specified by <var class="pv">item</var>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">perror</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">void perror(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints an error message to stderr.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">pow</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double pow(double <em>x</em>,
+        double <em>y</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the value <em>x</em> to the power <em>y</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">printf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int printf(const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and prints characters and values
+        to stdout.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">putc<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int putc(int <em>c</em>, FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints <em>c</em> to the output <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">putchar<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int putchar(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints <em>c</em> to stdout.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">putenv</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int *putenv(const char *<var class="pv">varname</var>);</td>
+        <td headers="wq782" valign="top" align="left">Sets the value of an environment variable
+        by altering an existing variable or creating a new one.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">puts</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int puts(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Prints a string to stdout.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">putwc<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t putwchar(wchar_t <em>wc</em>,  FILE <em>*stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wide character <em>wc</em> to a multibyte character, and writes it to the stream at the current
+        position.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">putwchar<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wint_t putwchar(wchar_t <em>wc</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wide character <em>wc</em> to a multibyte character and writes it to stdout.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">qsort</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void qsort(void *<em>base</em>, size_t <em>num</em>, size_t <em>width</em>, int(*<em>compare</em>)(const void *<em>element1</em>, const void *<em>element2</em>));</td>
+        <td headers="wq782" valign="top" align="left">Performs a quick sort of an array of <em>num</em> elements, each of <em>width</em> bytes
+        in size.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">raise</td>
+        <td headers="wq780" valign="top" align="left">signal.h</td>
+        <td headers="wq781" valign="top" align="left">int raise(int <em>sig</em>);</td>
+        <td headers="wq782" valign="top" align="left">Sends the signal <em>sig</em> to
+        the running program.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">rand</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int rand(void);</td>
+        <td headers="wq782" valign="top" align="left">Returns a pseudo-random integer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">rand_r</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int rand_r(void);</td>
+        <td headers="wq782" valign="top" align="left">Returns a pseudo-random integer. (Restartable
+        version)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">realloc</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void *realloc(void *<em>ptr</em>, size_t <em>size</em>);</td>
+        <td headers="wq782" valign="top" align="left">Changes the <em>size</em> of
+        a previously reserved storage block.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">regcomp</td>
+        <td headers="wq780" valign="top" align="left">regex.h</td>
+        <td headers="wq781" valign="top" align="left">int regcomp(regex_t <em>*preg</em>, const char <em>*pattern</em>, int <em>cflags</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compiles the source regular expression pointed
+        to by <em>pattern</em> into an executable version and stores
+        it in the location pointed to by <em>preg</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">regerror</td>
+        <td headers="wq780" valign="top" align="left">regex.h</td>
+        <td headers="wq781" valign="top" align="left">size_t regerror(int <em>errcode</em>, const regex_t <em>*preg</em>, char <em>*errbuf</em>,  size_t <em>errbuf_size</em>);</td>
+        <td headers="wq782" valign="top" align="left">Finds the description for the error code <em>errcode</em> for the regular expression  <em>preg</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">regexec</td>
+        <td headers="wq780" valign="top" align="left">regex.h</td>
+        <td headers="wq781" valign="top" align="left">int regexec(const regex_t <em>*preg</em>, const char <em>*string</em>, size_t <em>nmatch</em>, regmatch_t <em>*pmatch</em>, int <em>eflags</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares the null-ended string <em>string</em> against the compiled regular expression <em>preg</em> to find a match between the two.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">regfree</td>
+        <td headers="wq780" valign="top" align="left">regex.h</td>
+        <td headers="wq781" valign="top" align="left">void regfree(regex_t *preg);</td>
+        <td headers="wq782" valign="top" align="left">Frees any memory that was allocated by regcomp
+        to implement the regular expression <em>preg</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">remove</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int remove(const char *<em>filename</em>);</td>
+        <td headers="wq782" valign="top" align="left">Deletes the file specified by <em>filename</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">rename</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int rename(const char *<em>oldname</em>, const char *<em>newname</em>);</td>
+        <td headers="wq782" valign="top" align="left">Renames the specified file.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">rewind<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">void rewind(FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Repositions the file pointer associated with <em>stream</em> to the beginning of the file.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">scanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int scanf(const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from stdin into locations given
+        by <em>arg-list</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">setbuf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">void setbuf(FILE *<em>stream</em>, char *<em>buffer</em>);</td>
+        <td headers="wq782" valign="top" align="left">Controls buffering for <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">setjmp</td>
+        <td headers="wq780" valign="top" align="left">setjmp.h</td>
+        <td headers="wq781" valign="top" align="left">int setjmp(jmp_buf <em>env</em>);</td>
+        <td headers="wq782" valign="top" align="left">Saves a stack environment that can be subsequently
+        restored by longjmp.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">setlocale</td>
+        <td headers="wq780" valign="top" align="left">locale.h</td>
+        <td headers="wq781" valign="top" align="left">char *setlocale(int <em>category</em>, const char *<em>locale</em>);</td>
+        <td headers="wq782" valign="top" align="left">Changes or queries variables defined in the <em>locale</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">setvbuf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int setvbuf(FILE *<em>stream</em>, char *<em>buf</em>, int <em>type</em>, size_t <em>size</em>);</td>
+        <td headers="wq782" valign="top" align="left">Controls buffering and buffer <em>size</em> for <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">signal</td>
+        <td headers="wq780" valign="top" align="left">signal.h</td>
+        <td headers="wq781" valign="top" align="left">void(*signal (int <em>sig</em>, void(*<em>func</em>)(int))) (int);</td>
+        <td headers="wq782" valign="top" align="left">Registers func as a signal handler for the
+        signal sig.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">sin</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double sin(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the sine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">sinh</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double sinh(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the hyperbolic sine of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">snprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int snprintf(char *outbuf, size_t n, const
+        char*, ...)</td>
+        <td headers="wq782" valign="top" align="left">Same as sprintf except that the function
+        will stop after n characters have been written to outbuf.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">sprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int sprintf(char *<em>buffer</em>, const char *<em>format-string</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and stores characters and values
+        in <em>buffer</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">sqrt</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double sqrt(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the square root of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">srand</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">void srand(unsigned int <em>seed</em>);</td>
+        <td headers="wq782" valign="top" align="left">Sets the <em>seed</em> for
+        the pseudo-random number generator.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">sscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int sscanf(const char *<em>buffer</em>, const char *<em>format</em>, <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from <em>buffer</em> into the locations given by <em>arg-list</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcasecmp</td>
+        <td headers="wq780" valign="top" align="left">strings.h</td>
+        <td headers="wq781" valign="top" align="left">int srtcasecmp(const char *string1, const
+        char *string2);</td>
+        <td headers="wq782" valign="top" align="left">Compares strings without case sensitivity.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcat</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strcat(char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Concatenates <em>string2</em> to <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strchr</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strchr(const char *<em>string</em>, int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the first occurrence of <em>c</em> in <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcmp</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">int strcmp(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares the value of <em>string1</em> to <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcoll</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">int strcoll(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares two strings using the collating
+        sequence in the current locale.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcpy</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strcpy(char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies <em>string2</em> into <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strcspn</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">size_t strcspn(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns the length of the initial substring
+        of <em>string1</em> consisting of characters not contained
+        in <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strerror</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strerror(int <em>errnum</em>);</td>
+        <td headers="wq782" valign="top" align="left">Maps the error number in <em>errnum</em> to an error message string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strfmon<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int strfmon (char *s, size_t maxsize,
+        const char *format, ...);</td>
+        <td headers="wq782" valign="top" align="left">Converts monetary value to string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strftime</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">size_t strftime (char *<em>dest</em>, size_t <em>maxsize</em>, const char *<em>format</em>, const struct tm *<em>timeptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Stores characters in an array pointed to
+        by <em>dest</em>, according to the string determined by <em>format</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strlen</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">size_t strlen(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the length of <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strncasecmp</td>
+        <td headers="wq780" valign="top" align="left">strings.h</td>
+        <td headers="wq781" valign="top" align="left">int strncasecmp(const char *string1, const
+        char *string2, size_t count);</td>
+        <td headers="wq782" valign="top" align="left">Compares strings without case sensitivity.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strncat</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strncat(char *<em>string1</em>, const char *<em>string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Concatenates up to <em>count</em> characters of <em>string2</em> to <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strncmp</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">int strncmp(const char *<em>string1</em>, const char *<em>string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares up to <em>count</em> characters
+        of <em>string1</em> and <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strncpy</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strncpy(char *<em>string1</em>, const char *<em>string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies up to <em>count</em> characters
+        of <em>string2</em> to <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strpbrk</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strpbrk(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the first occurrence in <em>string1</em> of any character in <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strptime<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">char *strptime (const char *buf,
+        const char *format, struct tm *tm);</td>
+        <td headers="wq782" valign="top" align="left">Date and time conversion</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strrchr</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strrchr(const char *<em>string</em>, int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the last occurrence of <em>c</em> in <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strspn</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">size_t strspn(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns the length of the initial substring
+        of <em>string1</em> consisting of characters contained in <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strstr</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strstr(const char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns a pointer to the first occurrence
+        of <em>string2</em> in <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtod</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">double strtod(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a double precision value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtod32</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal32 strtod32(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a single-precision decimal floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtod64</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal64 strtod64(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a double-precision decimal floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtod128</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal128 strtod128(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a quad-precision decimal floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtof</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">float strtof(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a float value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtok</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strtok(char *<em>string1</em>, const char *<em>string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the next token in <em>string1</em> delimited by the next character in <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtok_r</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">char *strtok_r(char *<em>string</em>, const char *<em>seps</em>,
+        char **<em>lasts</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the next token in <em>string</em> delimited by the next character in <em>seps</em>.
+        (Restartable version of strtok.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtol</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">long int strtol(const char *<em>nptr</em>, char **<em>endptr</em>, int <em>base</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a signed long integer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtold</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">long double strtold(const char *<em>nptr</em>, char **<em>endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>nptr</em> to
+        a long double value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strtoul</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">unsigned long int strtoul(const char *<em>string1</em>, char **<em>string2</em>, int <em>base</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>string1</em> to
+        an unsigned long integer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">strxfrm</td>
+        <td headers="wq780" valign="top" align="left">string.h</td>
+        <td headers="wq781" valign="top" align="left">size_t strxfrm(char *<em>string1</em>, const char *<em>string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>string2</em> and
+        places the result in <em>string1</em>. The conversion is determined
+        by the program's current locale.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">swprintf</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int swprintf(wchar_t <em>*wcsbuffer</em>, size_t <em>n</em>, const wchar_t <em>*format</em>,  <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and stores a series of wide characters
+        and values into the wide-character buffer <em>wcsbuffer</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">swscanf</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int swscanf (const wchar_t <var class="pv">*buffer</var>,
+        const wchar_t <var class="pv">*format</var>, <em>arg-list</em>)</td>
+        <td headers="wq782" valign="top" align="left">Reads data from <var class="pv">buffer</var> into
+        the locations given by<var class="pv"> arg-list</var>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">system</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int system(const char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Passes <em>string</em> to
+        the system command analyzer.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">tan</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double tan(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the tangent of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">tanh</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double tanh(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the hyperbolic tangent of <em>x</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">time</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">time_t time(time_t *<em>timeptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns the current calendar time.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">time64</td>
+        <td headers="wq780" valign="top" align="left">time.h</td>
+        <td headers="wq781" valign="top" align="left">time64_t time64(time64_t *<em>timeptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Returns the current calendar time.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">tmpfile</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">FILE *tmpfile(void);</td>
+        <td headers="wq782" valign="top" align="left">Creates a temporary binary file and opens
+        it.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">tmpnam</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">char *tmpnam(char *<em>string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Generates a temporary file name.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">toascii</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int toascii(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>c</em> to a character
+        in the 7-bit US-ASCII character set.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">tolower</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int tolower(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>c</em> to lowercase.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">toupper</td>
+        <td headers="wq780" valign="top" align="left">ctype.h</td>
+        <td headers="wq781" valign="top" align="left">int toupper(int <em>c</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts <em>c</em> to uppercase.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">towctrans</td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">wint_t towctrans(wint_t <em>wc</em>, wctrans_t <em>desc</em>);</td>
+        <td headers="wq782" valign="top" align="left">Translates the wide character <em>wc</em> based on the mapping described by <em>desc</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">towlower<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">wint_t towlower (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Converts uppercase letter to lowercase letter.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">towupper<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">wint_t towupper (wint_t wc);</td>
+        <td headers="wq782" valign="top" align="left">Converts lowercase letter to uppercase letter.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ungetc<sup>1</sup></td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int ungetc(int <em>c</em>,
+        FILE *<em>stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Pushes <em>c</em> back onto
+        the input <em>stream</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">ungetwc<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">wint_t ungetwc(wint_t <em>wc</em>, FILE <em>*stream</em>);</td>
+        <td headers="wq782" valign="top" align="left">Pushes the wide character <em>wc</em> back onto the input stream.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">va_arg</td>
+        <td headers="wq780" valign="top" align="left">stdarg.h</td>
+        <td headers="wq781" valign="top" align="left"><em>var_type</em> va_arg(va_list <em>arg_ptr</em>, var_type);</td>
+        <td headers="wq782" valign="top" align="left">Returns the value of one argument and modifies <em>arg_ptr</em> to point to the next argument.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">va_end</td>
+        <td headers="wq780" valign="top" align="left">stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">void <em>va_end</em>(va_list <em>arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Facilitates normal return from variable argument
+        list processing.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">va_start</td>
+        <td headers="wq780" valign="top" align="left">stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">void <em>va_start</em>(va_list <em>arg_ptr, variable_name</em>);</td>
+        <td headers="wq782" valign="top" align="left">Initializes <em>arg_ptr</em> for subsequent use by <em>va_arg</em> and <em>va_end</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vfprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vfprintf(FILE *<em>stream</em>, const char *<em>format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and prints characters to the output <em>stream</em> using a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vfscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vfscanf(FILE <em>*stream</em>, const char <em>*format</em>, va_list <em>arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from a specified stream into locations
+        given by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vfwprintf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdarg.h<br>
+        stdio.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int vfwprintf(FILE <em>*stream</em>, const wchar_t <em>*format</em>, <em>va_list arg</em>);</td>
+        <td headers="wq782" valign="top" align="left">Equivalent to fwprintf, except that the variable
+        argument list is replaced by <em>arg</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vfwscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vfwscanf(FILE <em>*stream</em>, const wchar_t <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads wide data from a specified stream into
+        locations given by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vprintf(const char *<em>format</em>, va_list <em>arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and prints characters to stdout using
+        a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vscanf(const char <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from stdin into locations given
+        by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vsprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vsprintf(char *<em>target-string</em>, const char *<em>format</em>, va_list <em>arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and stores characters in a buffer
+        using a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vsnprintf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h</td>
+        <td headers="wq781" valign="top" align="left">int vsnprintf(char *outbuf, size_t n, const
+        char*, va_list);</td>
+        <td headers="wq782" valign="top" align="left">Same as vsprintf except that the function
+        will stop after n characters have been written to outbuf.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vsscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h stdarg.h</td>
+        <td headers="wq781" valign="top" align="left">int vsscanf(const char<em>*buffer</em>, const char <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads data from a buffer into locations given
+        by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vswprintf</td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdarg.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int vswprintf(wchar_t <em>*wcsbuffer</em>,  size_t <em>n</em>, const wchar_t <em>*format</em>,  <em>va_list arg</em>);</td>
+        <td headers="wq782" valign="top" align="left">Formats and stores a series of wide characters
+        and values in the buffer <em>wcsbuffer</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vswscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int vswscanf(const wchar_t <em>*buffer</em>, const wchar_t <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads wide data from a buffer into locations
+        given by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vwprintf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdarg.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int vwprintf(const wchar_t <em>*format</em>, <em>va_list arg</em>);</td>
+        <td headers="wq782" valign="top" align="left">Equivalent to wprintf, except that the variable
+        argument list is replaced by <em>arg</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">vwscanf</td>
+        <td headers="wq780" valign="top" align="left">stdio.h wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int vwscanf(const wchar_t <em>*format</em>, <em>va_list arg_ptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Reads wide data from stdin into locations
+        given by a variable number of arguments.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcrtomb<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wcrtomb (char *s, wchar_t wchar,
+        mbstate_t *pss);</td>
+        <td headers="wq782" valign="top" align="left">Converts a wide character to a multibyte
+        character. (Restartable version of wctomb.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcscat</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcscat(wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Appends a copy of the string pointed to by <em>string2</em> to the end of the string pointed to by <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcschr</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcschr(const wchar_t  <em>*string</em>, wchar_t  <em>character</em>);</td>
+        <td headers="wq782" valign="top" align="left">Searches the wide-character string pointed
+        to by <em>string</em> for the occurrence of <em>character</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcscmp</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wcscmp(const wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares two wide-character strings, <em>*string1</em> and <em>*string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcscoll<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wcscoll (const wchar_t *wcs1,
+        const wchar_t *wcs2);</td>
+        <td headers="wq782" valign="top" align="left">Compares two wide-character strings using
+        the collating sequence in the current locale.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcscpy</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcscpy(wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies the contents of <em>*string2</em> (including the ending wchar_t  null character) into <em>*string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcscspn</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcscspn(const wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determines the number of wchar_t  characters
+        in the initial segment of the string pointed to by <em>*string1</em> that do not appear in the string pointed to by <em>*string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsftime</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcsftime(wchar_t <em>*wdest</em>, size_t <em>maxsize</em>, const wchar_t <em>*format</em>,  const struct tm <em>*timeptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the time and date specification
+        in the <em>timeptr</em> structure into a wide-character string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcslen</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcslen(const wchar_t  <em>*string</em>);</td>
+        <td headers="wq782" valign="top" align="left">Computes the number of wide-characters in
+        the string pointed to by <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcslocaleconv</td>
+        <td headers="wq780" valign="top" align="left">locale.h</td>
+        <td headers="wq781" valign="top" align="left">struct wcslconv *wcslocaleconv(void);</td>
+        <td headers="wq782" valign="top" align="left">Formats numeric quantities in struct
+        wcslconv according to the current locale.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsncat</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcsncat(wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Appends up to <em>count</em> wide
+        characters from <em>string2</em> to the end of <em>string1</em>, and appends a wchar_t null character to the result.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsncmp</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wcsncmp(const wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares up to <em>count</em> wide
+        characters in <em>string1</em> to  <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsncpy</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcsncpy(wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>, size_t <em>count</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies up to <em>count</em> wide
+        characters from <em>string2</em> to  <em>string1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcspbrk</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcspbrk(const wchar_t  <em>*string1</em>, const wchar_t  <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the first occurrence in the string
+        pointed to by <em>string1</em> of any wide characters from
+        the string pointed to by <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsptime</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcsptime ( const wchar_t *buf, const
+        wchar_t *format, struct tm *tm );</td>
+        <td headers="wq782" valign="top" align="left">Date and time conversion. Equivalent to strptime(),
+        except that it uses wide characters.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsrchr</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcsrchr(const wchar_t  <em>*string</em>, wchar_t  <em>character</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the last occurrence of  <em>character</em> in the string pointed to by <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsrtombs<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcsrtombs (char *dst, const
+        wchar_t **src, size_t len, mbstate_t *ps);</td>
+        <td headers="wq782" valign="top" align="left">Converts wide character string to multibyte
+        string. (Restartable version of wcstombs.)</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsspn</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcsspn(const wchar_t <em>*string1</em>, const wchar_t <em>*string2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Computes the number of wide characters in
+        the initial segment of the string pointed to by <em>string1</em>, which consists entirely of wide characters from the string pointed
+        to by <em>string2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsstr</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcsstr(const wchar_t <em>*wcs1</em>, const wchar_t <em>*wcs2</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the first occurrence of <em>wcs2</em>  in <em>wcs1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstod</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">double wcstod(const wchar_t <em>*nptr</em>, wchar_t <em>**endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to a double value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstod32</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal32 wcstod32(const wchar_t <em>*nptr</em>, wchar_t <em>**endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to a single-precision decimal
+        floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstod64</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal64 wcstod64(const wchar_t <em>*nptr</em>, wchar_t <em>**endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to a double-precision decimal
+        floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstod128</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">_Decimal128 wcstod128(const wchar_t <em>*nptr</em>, wchar_t <em>**endptr</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to a quad-precision decimal
+        floating-point value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstok</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wcstok(wchar_t <em>*wcs1</em>, const wchar_t <em>*wcs2</em>, wchar_t <em>**ptr</em>)</td>
+        <td headers="wq782" valign="top" align="left">Breaks <em>wcs1</em> into
+        a sequence of tokens, each of which is delimited by a wide character from
+        the wide string pointed to by <em>wcs2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstol</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">long int wcstol(const wchar_t <em>*nptr</em>, wchar_t <em>**endptr</em>, int <em>base</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to a long integer value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstombs</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcstombs(char *dest, const
+        wchar_t *<em>string</em>, size_t <var class="pv">count</var>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wchar_t <em>string</em> into a multibyte string <em>dest</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcstoul</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">unsigned long int wcstoul(const wchar_t  <em>*nptr</em>, wchar_t <em>**endptr</em>, int  <em>base</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the initial portion of the wide-character
+        string pointed to by <em>nptr</em> to an unsigned long integer
+        value.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcsxfrm<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">size_t wcsxfrm (wchar_t <em>*wcs1</em>, const wchar_t <em>*wcs2</em>,
+        size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Transforms a wide-character string to values
+        which represent character collating weights and places the resulting wide-character
+        string into an array.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wctob</td>
+        <td headers="wq780" valign="top" align="left">
+        <div class="lines">stdarg.h<br>
+        wchar.h<br>
+        </div></td>
+        <td headers="wq781" valign="top" align="left">int wctob(wint_t <em>wc</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determines whether <em>wc</em> corresponds to a member of the extended character set whose multibyte
+        character representation is a single byte when in the initial shift state.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wctomb</td>
+        <td headers="wq780" valign="top" align="left">stdlib.h</td>
+        <td headers="wq781" valign="top" align="left">int wctomb(char *<em>string</em>, wchar_t <em>character</em>);</td>
+        <td headers="wq782" valign="top" align="left">Converts the wchar_t value of <em>character</em> into a multibyte <em>string</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wctrans</td>
+        <td headers="wq780" valign="top" align="left">wctype.h</td>
+        <td headers="wq781" valign="top" align="left">wctrans_t wctrans(const char <em>*property</em>);</td>
+        <td headers="wq782" valign="top" align="left">Constructs a value with type wctrans_t that
+        describes a mapping between wide characters identified by the string argument
+        property.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wctype<sup>4</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wctype_t wctype (const char  <em>*property</em>);</td>
+        <td headers="wq782" valign="top" align="left">Obtains handle for character property classification.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wcwidth</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wcswidth(const wchar_t   <em>*pwcs</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Determine the display width of a wide character
+        string.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wmemchr</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wmemchr(const wchar_t <em>*s</em>, wchar_t <em>c</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Locates the first occurrence of <em>c</em> in the initial <em>n</em> wide characters of the object
+        pointed to by  <em>s.</em></td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wmemcmp</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wmemcmp(const wchar_t <em>*s1</em>, const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Compares the first <em>n</em> wide
+        characters of the object pointed to by <em>s1</em> to the first
+         <em>n</em> characters of the object pointed to by <em>s2</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wmemcpy</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wmemcpy(wchar_t <em>*s1</em>, const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies <em>n</em> wide characters
+        from the object pointed to by <em>s2</em> to the object pointed
+        to by  <em>s1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wmemmove</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wmemmove(wchar_t <em>*s1</em>, const wchar_t <em>*s2</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies <em>n</em> wide characters
+        from the object pointed to by <em>s2</em> to the object pointed
+        to by  <em>s1</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wmemset</td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">wchar_t *wmemset(wchar_t <em>*s</em>, wchar_t <em>c</em>, size_t <em>n</em>);</td>
+        <td headers="wq782" valign="top" align="left">Copies the value of <em>c</em> into each of the first <em>n</em> wide characters of
+        the object pointed to by <em>s</em>.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wprintf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wprintf(const wchar_t  <em>*format</em>,  <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Equivalent to fwprintf with the argument
+        stdout interposed before the arguments to wprintf.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">wscanf<sup>6</sup></td>
+        <td headers="wq780" valign="top" align="left">wchar.h</td>
+        <td headers="wq781" valign="top" align="left">int wscanf(const wchar_t  <em>*format</em>,  <em>arg-list</em>);</td>
+        <td headers="wq782" valign="top" align="left">Equivalent to fwscanf with the argument stdin
+        interposed before the arguments of wscanf.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">y0</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double y0(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        second kind of order 0.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">y1</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double y1(double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        second kind of order 1.</td>
+        </tr>
+        <tr>
+        <td headers="wq779" valign="top" align="left">yn</td>
+        <td headers="wq780" valign="top" align="left">math.h</td>
+        <td headers="wq781" valign="top" align="left">double yn(int <em>n</em>,
+        double <em>x</em>);</td>
+        <td headers="wq782" valign="top" align="left">Calculates the Bessel function value of the
+        second kind of order <em>n.</em></td>
+        </tr>
+        <tr>
+</body>
+</html>

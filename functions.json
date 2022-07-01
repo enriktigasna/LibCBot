@@ -1,0 +1,1676 @@
+[
+    {
+      "function": "abort",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void abort(void);",
+      "description": "Stops a program abnormally."
+    },
+    {
+      "function": "abs",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int abs(int n);",
+      "description": "Calculates the absolute value of an integer argument n."
+    },
+    {
+      "function": "acos",
+      "system_include_file": "math.h",
+      "function_prototype": "double acos(double x);",
+      "description": "Calculates the arc cosine of x."
+    },
+    {
+      "function": "asctime",
+      "system_include_file": "time.h",
+      "function_prototype": "char *asctime(const struct tm *time);",
+      "description": "Converts the time that is stored as a structure to a character string."
+    },
+    {
+      "function": "asctime_r",
+      "system_include_file": "time.h",
+      "function_prototype": "char *asctime_r (const struct tm *tm, char *buf);",
+      "description": "Converts tm that is stored as a structure to a character string. (Restartable version of asctime.)"
+    },
+    {
+      "function": "asin",
+      "system_include_file": "math.h",
+      "function_prototype": "double asin(double x);",
+      "description": "Calculates the arc sine of x."
+    },
+    {
+      "function": "assert",
+      "system_include_file": "assert.h",
+      "function_prototype": "void assert(int expression);",
+      "description": "Prints a diagnostic message and ends the program if the expression is false."
+    },
+    {
+      "function": "atan",
+      "system_include_file": "math.h",
+      "function_prototype": "double atan(double x);",
+      "description": "Calculates the arc tangent of x."
+    },
+    {
+      "function": "atan2",
+      "system_include_file": "math.h",
+      "function_prototype": "double atan2(double y, double x);",
+      "description": "Calculates the arc tangent of y/x."
+    },
+    {
+      "function": "atexit",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int atexit(void (*func)(void));",
+      "description": "Registers a function to be called at normal termination."
+    },
+    {
+      "function": "atof",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "double atof(const char *string);",
+      "description": "Converts string to a double-precision floating-point value."
+    },
+    {
+      "function": "atoi",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int atoi(const char *string);",
+      "description": "Converts string to an integer."
+    },
+    {
+      "function": "atol",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "long int atol(const char *string);",
+      "description": "Converts string to a long integer."
+    },
+    {
+      "function": "bsearch",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void *bsearch(const void *key, const void *base, size_t num, size_t size, int (*compare) (const void *element1, const void *element2));",
+      "description": "Performs a binary search. The contents of the array should be in ascending sorted order according to the comparison function."
+    },
+    {
+      "function": "btowc",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t btowc(int c);",
+      "description": "Determines whether c constitues a valid multibyte character in the initial shift state."
+    },
+    {
+      "function": "calloc",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void *calloc(size_t num, size_t size);",
+      "description": "Reserves storage space for an array of num elements, each of size size, and initializes the values of all elements to 0."
+    },
+    {
+      "function": "catclose6",
+      "system_include_file": "nl_types.h",
+      "function_prototype": "int catclose (nl_catd catd);",
+      "description": "Closes a previously opened message catalog."
+    },
+    {
+      "function": "catgets6",
+      "system_include_file": "nl_types.h",
+      "function_prototype": "char *catgets(nl_catd catd, int set_id, int msg_id, const char *s);",
+      "description": "Retrieves a message from an open message catalog."
+    },
+    {
+      "function": "catopen6",
+      "system_include_file": "nl_types.h",
+      "function_prototype": "nl_catd catopen (const char *name, int oflag);",
+      "description": "Opens a message catalog, which must be done before a message can be retrieved."
+    },
+    {
+      "function": "ceil",
+      "system_include_file": "math.h",
+      "function_prototype": "double ceil(double x);",
+      "description": "Calculates the double value representing the smallest integer that is greater than or equal to x."
+    },
+    {
+      "function": "clearerr",
+      "system_include_file": "stdio.h",
+      "function_prototype": "void clearerr(FILE *stream);",
+      "description": "Resets the error indicators and the end-of-file indicator for stream."
+    },
+    {
+      "function": "clock",
+      "system_include_file": "time.h",
+      "function_prototype": "clock_t clock(void);",
+      "description": "Returns the processor time that has elapsed since the job was started."
+    },
+    {
+      "function": "cos",
+      "system_include_file": "math.h",
+      "function_prototype": "double cos(double x);",
+      "description": "Calculates the cosine of x."
+    },
+    {
+      "function": "cosh",
+      "system_include_file": "math.h",
+      "function_prototype": "double cosh(double x);",
+      "description": "Calculates the hyperbolic cosine of x."
+    },
+    {
+      "function": "ctime",
+      "system_include_file": "time.h",
+      "function_prototype": "char *ctime(const time_t *time);",
+      "description": "Converts time to a character string."
+    },
+    {
+      "function": "ctime64",
+      "system_include_file": "time.h",
+      "function_prototype": "char *ctime64(const time64_t *time);",
+      "description": "Converts time to a character string."
+    },
+    {
+      "function": "ctime_r",
+      "system_include_file": "time.h",
+      "function_prototype": "char *ctime_r(const time_t *time, char *buf);",
+      "description": "Converts time to a character string. (Restartable version of ctime.)"
+    },
+    {
+      "function": "ctime64_r",
+      "system_include_file": "time.h",
+      "function_prototype": "char *ctime64_r(const time64_t *time, char *buf);",
+      "description": "Converts time to a character string. (Restartable version of ctime64.)"
+    },
+    {
+      "function": "difftime",
+      "system_include_file": "time.h",
+      "function_prototype": "double difftime(time_t time2, time_t time1);",
+      "description": "Computes the difference between time2 and time1."
+    },
+    {
+      "function": "difftime64",
+      "system_include_file": "time.h",
+      "function_prototype": "double difftime64(time64_t time2, time64_t time1);",
+      "description": "Computes the difference between time2 and time1."
+    },
+    {
+      "function": "div",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "div_t div(int numerator, int denominator);",
+      "description": "Calculates the quotient and remainder of the division of numerator by denominator."
+    },
+    {
+      "function": "erf",
+      "system_include_file": "math.h",
+      "function_prototype": "double erf(double x);",
+      "description": "Calculates the error function of  x."
+    },
+    {
+      "function": "erfc",
+      "system_include_file": "math.h",
+      "function_prototype": "double erfc(double x);",
+      "description": "Calculates the error function for large values of x."
+    },
+    {
+      "function": "exit",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void exit(int status);",
+      "description": "Ends a program normally."
+    },
+    {
+      "function": "exp",
+      "system_include_file": "math.h",
+      "function_prototype": "double exp(double x);",
+      "description": "Calculates the exponential function of a floating-point argument x."
+    },
+    {
+      "function": "fabs",
+      "system_include_file": "math.h",
+      "function_prototype": "double fabs(double x);",
+      "description": "Calculates the absolute value of a floating-point argument x."
+    },
+    {
+      "function": "fclose",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fclose(FILE *stream);",
+      "description": "Closes the specified stream."
+    },
+    {
+      "function": "fdopen5",
+      "system_include_file": "stdio.h",
+      "function_prototype": "FILE *fdopen(int handle, const char *type);",
+      "description": "Associates an input or output stream with the file identified by handle."
+    },
+    {
+      "function": "feof",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int feof(FILE *stream);",
+      "description": "Tests whether the end-of-file flag is set for a given stream."
+    },
+    {
+      "function": "ferror",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int ferror(FILE *stream);",
+      "description": "Tests for an error indicator in reading from or writing to stream."
+    },
+    {
+      "function": "fflush1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fflush(FILE *stream);",
+      "description": "Writes the contents of the buffer associated with the output stream."
+    },
+    {
+      "function": "fgetc1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fgetc(FILE *stream);",
+      "description": "Reads a single unsigned character from the input stream."
+    },
+    {
+      "function": "fgetpos1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fgetpos(FILE *stream, fpos_t *pos);",
+      "description": "Stores the current position of the file pointer associated with stream into the object pointed to by pos."
+    },
+    {
+      "function": "fgets1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "char *fgets(char *string, int n, FILE *stream);",
+      "description": "Reads a string from the input stream."
+    },
+    {
+      "function": "fgetwc6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t fgetwc(FILE *stream);",
+      "description": "Reads the next multibyte character from the input stream pointed to by stream."
+    },
+    {
+      "function": "fgetws6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wchar_t *fgetws(wchar_t *wcs,  int n, FILE *stream);",
+      "description": "Reads wide characters from the stream into the array pointed to by wcs."
+    },
+    {
+      "function": "fileno5",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fileno(FILE *stream);",
+      "description": "Determines the file handle currently associated with stream."
+    },
+    {
+      "function": "floor",
+      "system_include_file": "math.h",
+      "function_prototype": "double floor(double x);",
+      "description": "Calculates the floating-point value representing the largest integer less than or equal to x."
+    },
+    {
+      "function": "fmod",
+      "system_include_file": "math.h",
+      "function_prototype": "double fmod(double x, double y);",
+      "description": "Calculates the floating-point remainder of x/y."
+    },
+    {
+      "function": "fopen",
+      "system_include_file": "stdio.h",
+      "function_prototype": "FILE *fopen(const char *filename, const char *mode);",
+      "description": "Opens the specified file."
+    },
+    {
+      "function": "fprintf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fprintf(FILE *stream, const char *format-string, arg-list);",
+      "description": "Formats and prints characters and values to the output stream."
+    },
+    {
+      "function": "fputc1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fputc(int c, FILE *stream);",
+      "description": "Prints a character to the output stream."
+    },
+    {
+      "function": "fputs1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fputs(const char *string, FILE *stream);",
+      "description": "Copies a string to the output stream."
+    },
+    {
+      "function": "fputwc6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t fputwc(wchar_t wc,  FILE *stream);",
+      "description": "Converts the wide character wc to a multibyte character and writes it to the output stream pointed to by  stream at the current position."
+    },
+    {
+      "function": "fputws6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "int fputws(const wchar_t *wcs, FILE  *stream);",
+      "description": "Converts the wide-character string wcs to a multibyte-character string and writes it to stream as a multibyte character string."
+    },
+    {
+      "function": "fread",
+      "system_include_file": "stdio.h",
+      "function_prototype": "size_t fread(void *buffer, size_t size, size_t count, FILE *stream);",
+      "description": "Reads up to count items of size length from the input stream, and stores them in buffer."
+    },
+    {
+      "function": "free",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void free(void *ptr);",
+      "description": "Frees a block of storage."
+    },
+    {
+      "function": "freopen",
+      "system_include_file": "stdio.h",
+      "function_prototype": "FILE *freopen(const char *filename, const char *mode, FILE *stream);",
+      "description": "Closes stream, and reassigns it to the file specified."
+    },
+    {
+      "function": "frexp",
+      "system_include_file": "math.h",
+      "function_prototype": "double frexp(double x, int *expptr);",
+      "description": "Separates a floating-point number into its mantissa and exponent."
+    },
+    {
+      "function": "fscanf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fscanf(FILE *stream, const char *format-string, arg-list);",
+      "description": "Reads data from stream into locations given by arg-list."
+    },
+    {
+      "function": "fseek1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fseek(FILE *stream, long int offset, int origin);",
+      "description": "Changes the current file position associated with stream to a new location."
+    },
+    {
+      "function": "fsetpos1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int fsetpos(FILE *stream, const fpos_t *pos);",
+      "description": "Moves the current file position to a new location determined by pos."
+    },
+    {
+      "function": "ftell1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "long int ftell(FILE *stream);",
+      "description": "Gets the current position of the file pointer."
+    },
+    {
+      "function": "fwide6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "int fwide(FILE *stream, int mode);",
+      "description": "Determines the orientation of the stream pointed to by stream."
+    },
+    {
+      "function": "fwprintf6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "int fwprintf(FILE *stream, const wchar_t *format, arg-list);",
+      "description": "Writes output to the stream pointed to by stream."
+    },
+    {
+      "function": "fwrite",
+      "system_include_file": "stdio.h",
+      "function_prototype": "size_t fwrite(const void *buffer, size_t size,size_t count, FILE *stream);",
+      "description": "Writes up to count items of size length from buffer to stream."
+    },
+    {
+      "function": "fwscanf6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "int fwscanf(FILE *stream, const wchar_t *format, arg-list)",
+      "description": "Reads input from the stream pointed to by stream."
+    },
+    {
+      "function": "gamma",
+      "system_include_file": "math.h",
+      "function_prototype": "double gamma(double x);",
+      "description": "Computes the Gamma function"
+    },
+    {
+      "function": "getc1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int getc(FILE *stream);",
+      "description": "Reads a single character from the input stream."
+    },
+    {
+      "function": "getchar1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int getchar(void);",
+      "description": "Reads a single character from stdin."
+    },
+    {
+      "function": "getenv",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "char *getenv(const char *varname);",
+      "description": "Searches environment variables for varname."
+    },
+    {
+      "function": "gets",
+      "system_include_file": "stdio.h",
+      "function_prototype": "char *gets(char *buffer);",
+      "description": "Reads a string from stdin, and stores it in buffer."
+    },
+    {
+      "function": "getwc6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t getwc(FILE *stream);",
+      "description": "Reads the next multibyte character from  stream, converts it to a wide character and advances the associated file position indicator for stream."
+    },
+    {
+      "function": "getwchar6",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wint_t getwchar(void);",
+      "description": "Reads the next multibyte character from stdin, converts it to a wide character, and advances the associated file position indicator for stdin."
+    },
+    {
+      "function": "gmtime",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *gmtime(const time_t *time);",
+      "description": "Converts a time value to a structure of type tm."
+    },
+    {
+      "function": "gmtime64",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *gmtime64(const time64_t *time);",
+      "description": "Converts a time value to a structure of type tm."
+    },
+    {
+      "function": "gmtime_r",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *gmtime_r (const time_t *time, struct tm *result);",
+      "description": "Converts a time value to a structure of type tm. (Restartable version of gmtime.)"
+    },
+    {
+      "function": "gmtime64_r",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *gmtime64_r (const time64_t *time, struct tm *result);",
+      "description": "Converts a time value to a structure of type tm. (Restartable version of gmtime64.)"
+    },
+    {
+      "function": "hypot",
+      "system_include_file": "math.h",
+      "function_prototype": "double hypot(double side1, double side2);",
+      "description": "Calculates the hypotenuse of a right-angled triangle with sides of length side1 and side2."
+    },
+    {
+      "function": "isalnum",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isalnum(int c);",
+      "description": "Tests if c is alphanumeric."
+    },
+    {
+      "function": "isalpha",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isalpha(int c);",
+      "description": "Tests if c is alphabetic."
+    },
+    {
+      "function": "isascii",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isascii(int c);",
+      "description": "Tests if c is within the 7-bit US-ASCII range."
+    },
+    {
+      "function": "iscntrl",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int iscntrl(int c);",
+      "description": "Tests if c is a control character."
+    },
+    {
+      "function": "isdigit",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isdigit(int c);",
+      "description": "Tests if c is a decimal digit."
+    },
+    {
+      "function": "isgraph",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isgraph(int c);",
+      "description": "Tests if c is a printable character excluding the space."
+    },
+    {
+      "function": "islower",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int islower(int c);",
+      "description": "Tests if c is a lowercase letter."
+    },
+    {
+      "function": "isprint",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isprint(int c);",
+      "description": "Tests if c is a printable character including the space."
+    },
+    {
+      "function": "ispunct",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int ispunct(int c);",
+      "description": "Tests if c is a punctuation character."
+    },
+    {
+      "function": "isspace",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isspace(int c);",
+      "description": "Tests if c is a whitespace character."
+    },
+    {
+      "function": "isupper",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int isupper(int c);",
+      "description": "Tests if c is an uppercase letter."
+    },
+    {
+      "function": "iswalnum4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswalnum (wint_t wc);",
+      "description": "Checks for any alphanumeric wide character."
+    },
+    {
+      "function": "iswalpha4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswalpha (wint_t wc);",
+      "description": "Checks for any alphabetic wide character."
+    },
+    {
+      "function": "iswcntrl4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswcntrl (wint_t wc);",
+      "description": "Tests for any control wide character."
+    },
+    {
+      "function": "iswctype4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswctype(wint_t wc, wctype_t wc_prop);",
+      "description": "Determines whether or not the wide character wc has the property wc_prop."
+    },
+    {
+      "function": "iswdigit4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswdigit (wint_t wc);",
+      "description": "Checks for any decimal-digit wide character."
+    },
+    {
+      "function": "iswgraph4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswgraph (wint_t wc);",
+      "description": "Checks for any printing wide character except for the wide-character space."
+    },
+    {
+      "function": "iswlower4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswlower (wint_t wc);",
+      "description": "Checks for any lowercase wide character."
+    },
+    {
+      "function": "iswprint4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswprint (wint_t wc);",
+      "description": "Checks for any printing wide character."
+    },
+    {
+      "function": "iswpunct4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswpunct (wint_t wc);",
+      "description": "Test for a wide non-alphanumeric, non-space character."
+    },
+    {
+      "function": "iswspace4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswspace (wint_t wc);",
+      "description": "Checks for any wide character that corresponds to an implementation-defined set of wide characters for which iswalnum is false."
+    },
+    {
+      "function": "iswupper4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswupper (wint_t wc);",
+      "description": "Checks for any uppercase wide character."
+    },
+    {
+      "function": "iswxdigit4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int iswxdigit (wint_t wc);",
+      "description": "Checks for any hexadecimal digit character."
+    },
+    {
+      "function": "isxdigit4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "int isxdigit(int c);",
+      "description": "Tests if c is a hexadecimal digit."
+    },
+    {
+      "function": "j0",
+      "system_include_file": "math.h",
+      "function_prototype": "double j0(double x);",
+      "description": "Calculates the Bessel function value of the first kind of order 0."
+    },
+    {
+      "function": "j1",
+      "system_include_file": "math.h",
+      "function_prototype": "double j1(double x);",
+      "description": "Calculates the Bessel function value of the first kind of order 1."
+    },
+    {
+      "function": "jn",
+      "system_include_file": "math.h",
+      "function_prototype": "double jn(int n, double x);",
+      "description": "Calculates the Bessel function value of the first kind of order n."
+    },
+    {
+      "function": "labs",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "long int labs(long int n);",
+      "description": "Calculates the absolute value of n."
+    },
+    {
+      "function": "ldexp",
+      "system_include_file": "math.h",
+      "function_prototype": "double ldexp(double x, int exp);",
+      "description": "Returns the value of x multiplied by (2 to the power of exp)."
+    },
+    {
+      "function": "ldiv",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "ldiv_t ldiv(long int numerator, long int denominator);",
+      "description": "Calculates the quotient and remainder of numerator/denominator."
+    },
+    {
+      "function": "localeconv",
+      "system_include_file": "locale.h",
+      "function_prototype": "struct lconv *localeconv(void);",
+      "description": "Formats numeric quantities in struct lconv according to the current locale."
+    },
+    {
+      "function": "localtime",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *localtime(const time_t *timeval);",
+      "description": "Converts timeval to a structure of type tm."
+    },
+    {
+      "function": "localtime64",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *localtime64(const time64_t *timeval);",
+      "description": "Converts timeval to a structure of type tm."
+    },
+    {
+      "function": "localtime_r",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *localtime_r (const time_t *timeval, struct tm *result);",
+      "description": "Converts a time value to a structure of type tm. (Restartable version of localtime.)"
+    },
+    {
+      "function": "localtime64_r",
+      "system_include_file": "time.h",
+      "function_prototype": "struct tm *localtime64_r (const time64_t *timeval, struct tm *result);",
+      "description": "Converts a time value to a structure of type tm. (Restartable version of localtime64.)"
+    },
+    {
+      "function": "log",
+      "system_include_file": "math.h",
+      "function_prototype": "double log(double x);",
+      "description": "Calculates the natural logarithm of x."
+    },
+    {
+      "function": "log10",
+      "system_include_file": "math.h",
+      "function_prototype": "double log10(double x);",
+      "description": "Calculates the base 10 logarithm of x."
+    },
+    {
+      "function": "longjmp",
+      "system_include_file": "setjmp.h",
+      "function_prototype": "void longjmp(jmp_buf env, int value);",
+      "description": "Restores a stack environment previously set in env by the setjmp function."
+    },
+    {
+      "function": "malloc",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void *malloc(size_t size);",
+      "description": "Reserves a block of storage."
+    },
+    {
+      "function": "mblen",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int mblen(const char *string, size_t n);",
+      "description": "Determines the length of a multibyte character string."
+    },
+    {
+      "function": "mbrlen4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int mbrlen (const char *s, size_t n, mbstate_t *ps);",
+      "description": "Determines the length of a multibyte character. (Restartable version of mblen.)"
+    },
+    {
+      "function": "mbrtowc4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int mbrtowc (wchar_t *pwc, const char *s, size_t n, mbstate_t *ps);",
+      "description": "Convert a multibyte character to a wide character (Restartable version of mbtowc.)"
+    },
+    {
+      "function": "mbsinit4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int mbsinit (const mbstate_t *ps);",
+      "description": "Test state object *ps for initial state."
+    },
+    {
+      "function": "mbsrtowcs4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t mbsrtowc (wchar_t *dst, const char **src, size_t len, mbstate_t *ps);",
+      "description": "Convert multibyte string to a wide character string. (Restartable version of mbstowcs.)"
+    },
+    {
+      "function": "mbstowcs",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "size_t mbstowcs(wchar_t *pwc, const char *string, size_t n);",
+      "description": "Converts the multibyte characters in string to their corresponding wchar_t codes, and stores not more than n codes in pwc."
+    },
+    {
+      "function": "mbtowc",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int mbtowc(wchar_t *pwc, const char *string, size_t n);",
+      "description": "Stores the wchar_t code corresponding to the first n bytes of multibyte character string into the wchar_t character pwc."
+    },
+    {
+      "function": "memchr",
+      "system_include_file": "string.h",
+      "function_prototype": "void *memchr(const void *buf, int c, size_t count);",
+      "description": "Searches the first count bytes of buf for the first occurrence of c converted to an unsigned character."
+    },
+    {
+      "function": "memcmp",
+      "system_include_file": "string.h",
+      "function_prototype": "int memcmp(const void *buf1, const void *buf2, size_t count);",
+      "description": "Compares up to count bytes of buf1 and buf2."
+    },
+    {
+      "function": "memcpy",
+      "system_include_file": "string.h",
+      "function_prototype": "void *memcpy(void *dest, const void *src, size_t count);",
+      "description": "Copies count bytes of src to dest."
+    },
+    {
+      "function": "memmove",
+      "system_include_file": "string.h",
+      "function_prototype": "void *memmove(void *dest, const void *src, size_t count);",
+      "description": "Copies count bytes of src to dest.  Allows copying between objects that overlap."
+    },
+    {
+      "function": "memset",
+      "system_include_file": "string.h",
+      "function_prototype": "void *memset(void *dest, int c, size_t count);",
+      "description": "Sets count bytes of dest to a value c."
+    },
+    {
+      "function": "mktime",
+      "system_include_file": "time.h",
+      "function_prototype": "time_t mktime(struct tm *time);",
+      "description": "Converts local time into calendar time."
+    },
+    {
+      "function": "mktime64",
+      "system_include_file": "time.h",
+      "function_prototype": "time64_t mktime64(struct tm *time);",
+      "description": "Converts local time into calendar time."
+    },
+    {
+      "function": "modf",
+      "system_include_file": "math.h",
+      "function_prototype": "double modf(double x, double *intptr);",
+      "description": "Breaks down the floating-point value x into fractional and integral parts."
+    },
+    {
+      "function": "nextafter",
+      "system_include_file": "math.h",
+      "function_prototype": "double nextafter(double x, double y);",
+      "description": "Calculates the next representable value after x in the direction of y."
+    },
+    {
+      "function": "nextafterl",
+      "system_include_file": "math.h",
+      "function_prototype": "long double nextafterl(long double x, long double y);",
+      "description": "Calculates the next representable value after x in the direction of y."
+    },
+    {
+      "function": "nexttoward",
+      "system_include_file": "math.h",
+      "function_prototype": "double nexttoward(double x, long double y);",
+      "description": "Calculates the next representable value after x in the direction of y."
+    },
+    {
+      "function": "nexttowardl",
+      "system_include_file": "math.h",
+      "function_prototype": "long double nexttowardl(long double x, long double y);",
+      "description": "Calculates the next representable value after x in the direction of y."
+    },
+    {
+      "function": "nl_langinfo4",
+      "system_include_file": "langinfo.h",
+      "function_prototype": "char *nl_langinfo(nl_item item);",
+      "description": "Retrieve from the current locale the string that describes the requested information specified by item."
+    },
+    {
+      "function": "perror",
+      "system_include_file": "stdio.h",
+      "function_prototype": "void perror(const char *string);",
+      "description": "Prints an error message to stderr."
+    },
+    {
+      "function": "pow",
+      "system_include_file": "math.h",
+      "function_prototype": "double pow(double x, double y);",
+      "description": "Calculates the value x to the power y."
+    },
+    {
+      "function": "printf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int printf(const char *format-string, arg-list);",
+      "description": "Formats and prints characters and values to stdout."
+    },
+    {
+      "function": "putc1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int putc(int c, FILE *stream);",
+      "description": "Prints c to the output stream."
+    },
+    {
+      "function": "putchar1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int putchar(int c);",
+      "description": "Prints c to stdout."
+    },
+    {
+      "function": "putenv",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int *putenv(const char *varname);",
+      "description": "Sets the value of an environment variable by altering an existing variable or creating a new one."
+    },
+    {
+      "function": "puts",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int puts(const char *string);",
+      "description": "Prints a string to stdout."
+    },
+    {
+      "function": "putwc6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t putwchar(wchar_t wc,  FILE *stream);",
+      "description": "Converts the wide character wc to a multibyte character, and writes it to the stream at the current position."
+    },
+    {
+      "function": "putwchar6",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wint_t putwchar(wchar_t wc);",
+      "description": "Converts the wide character wc to a multibyte character and writes it to stdout."
+    },
+    {
+      "function": "qsort",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void qsort(void *base, size_t num, size_t width, int(*compare)(const void *element1, const void *element2));",
+      "description": "Performs a quick sort of an array of num elements, each of width bytes in size."
+    },
+    {
+      "function": "raise",
+      "system_include_file": "signal.h",
+      "function_prototype": "int raise(int sig);",
+      "description": "Sends the signal sig to the running program."
+    },
+    {
+      "function": "rand",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int rand(void);",
+      "description": "Returns a pseudo-random integer."
+    },
+    {
+      "function": "rand_r",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int rand_r(void);",
+      "description": "Returns a pseudo-random integer. (Restartable version)"
+    },
+    {
+      "function": "realloc",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void *realloc(void *ptr, size_t size);",
+      "description": "Changes the size of a previously reserved storage block."
+    },
+    {
+      "function": "regcomp",
+      "system_include_file": "regex.h",
+      "function_prototype": "int regcomp(regex_t *preg, const char *pattern, int cflags);",
+      "description": "Compiles the source regular expression pointed to by pattern into an executable version and stores it in the location pointed to by preg."
+    },
+    {
+      "function": "regerror",
+      "system_include_file": "regex.h",
+      "function_prototype": "size_t regerror(int errcode, const regex_t *preg, char *errbuf,  size_t errbuf_size);",
+      "description": "Finds the description for the error code errcode for the regular expression  preg."
+    },
+    {
+      "function": "regexec",
+      "system_include_file": "regex.h",
+      "function_prototype": "int regexec(const regex_t *preg, const char *string, size_t nmatch, regmatch_t *pmatch, int eflags);",
+      "description": "Compares the null-ended string string against the compiled regular expression preg to find a match between the two."
+    },
+    {
+      "function": "regfree",
+      "system_include_file": "regex.h",
+      "function_prototype": "void regfree(regex_t *preg);",
+      "description": "Frees any memory that was allocated by regcomp to implement the regular expression preg."
+    },
+    {
+      "function": "remove",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int remove(const char *filename);",
+      "description": "Deletes the file specified by filename."
+    },
+    {
+      "function": "rename",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int rename(const char *oldname, const char *newname);",
+      "description": "Renames the specified file."
+    },
+    {
+      "function": "rewind1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "void rewind(FILE *stream);",
+      "description": "Repositions the file pointer associated with stream to the beginning of the file."
+    },
+    {
+      "function": "scanf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int scanf(const char *format-string, arg-list);",
+      "description": "Reads data from stdin into locations given by arg-list."
+    },
+    {
+      "function": "setbuf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "void setbuf(FILE *stream, char *buffer);",
+      "description": "Controls buffering for stream."
+    },
+    {
+      "function": "setjmp",
+      "system_include_file": "setjmp.h",
+      "function_prototype": "int setjmp(jmp_buf env);",
+      "description": "Saves a stack environment that can be subsequently restored by longjmp."
+    },
+    {
+      "function": "setlocale",
+      "system_include_file": "locale.h",
+      "function_prototype": "char *setlocale(int category, const char *locale);",
+      "description": "Changes or queries variables defined in the locale."
+    },
+    {
+      "function": "setvbuf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int setvbuf(FILE *stream, char *buf, int type, size_t size);",
+      "description": "Controls buffering and buffer size for stream."
+    },
+    {
+      "function": "signal",
+      "system_include_file": "signal.h",
+      "function_prototype": "void(*signal (int sig, void(*func)(int))) (int);",
+      "description": "Registers func as a signal handler for the signal sig."
+    },
+    {
+      "function": "sin",
+      "system_include_file": "math.h",
+      "function_prototype": "double sin(double x);",
+      "description": "Calculates the sine of x."
+    },
+    {
+      "function": "sinh",
+      "system_include_file": "math.h",
+      "function_prototype": "double sinh(double x);",
+      "description": "Calculates the hyperbolic sine of x."
+    },
+    {
+      "function": "snprintf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int snprintf(char *outbuf, size_t n, const char*, ...)",
+      "description": "Same as sprintf except that the function will stop after n characters have been written to outbuf."
+    },
+    {
+      "function": "sprintf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int sprintf(char *buffer, const char *format-string, arg-list);",
+      "description": "Formats and stores characters and values in buffer."
+    },
+    {
+      "function": "sqrt",
+      "system_include_file": "math.h",
+      "function_prototype": "double sqrt(double x);",
+      "description": "Calculates the square root of x."
+    },
+    {
+      "function": "srand",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "void srand(unsigned int seed);",
+      "description": "Sets the seed for the pseudo-random number generator."
+    },
+    {
+      "function": "sscanf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int sscanf(const char *buffer, const char *format, arg-list);",
+      "description": "Reads data from buffer into the locations given by arg-list."
+    },
+    {
+      "function": "strcasecmp",
+      "system_include_file": "strings.h",
+      "function_prototype": "int srtcasecmp(const char *string1, const char *string2);",
+      "description": "Compares strings without case sensitivity."
+    },
+    {
+      "function": "strcat",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strcat(char *string1, const char *string2);",
+      "description": "Concatenates string2 to string1."
+    },
+    {
+      "function": "strchr",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strchr(const char *string, int c);",
+      "description": "Locates the first occurrence of c in string."
+    },
+    {
+      "function": "strcmp",
+      "system_include_file": "string.h",
+      "function_prototype": "int strcmp(const char *string1, const char *string2);",
+      "description": "Compares the value of string1 to string2."
+    },
+    {
+      "function": "strcoll",
+      "system_include_file": "string.h",
+      "function_prototype": "int strcoll(const char *string1, const char *string2);",
+      "description": "Compares two strings using the collating sequence in the current locale."
+    },
+    {
+      "function": "strcpy",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strcpy(char *string1, const char *string2);",
+      "description": "Copies string2 into string1."
+    },
+    {
+      "function": "strcspn",
+      "system_include_file": "string.h",
+      "function_prototype": "size_t strcspn(const char *string1, const char *string2);",
+      "description": "Returns the length of the initial substring of string1 consisting of characters not contained in string2."
+    },
+    {
+      "function": "strerror",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strerror(int errnum);",
+      "description": "Maps the error number in errnum to an error message string."
+    },
+    {
+      "function": "strfmon4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int strfmon (char *s, size_t maxsize, const char *format, ...);",
+      "description": "Converts monetary value to string."
+    },
+    {
+      "function": "strftime",
+      "system_include_file": "time.h",
+      "function_prototype": "size_t strftime (char *dest, size_t maxsize, const char *format, const struct tm *timeptr);",
+      "description": "Stores characters in an array pointed to by dest, according to the string determined by format."
+    },
+    {
+      "function": "strlen",
+      "system_include_file": "string.h",
+      "function_prototype": "size_t strlen(const char *string);",
+      "description": "Calculates the length of string."
+    },
+    {
+      "function": "strncasecmp",
+      "system_include_file": "strings.h",
+      "function_prototype": "int strncasecmp(const char *string1, const char *string2, size_t count);",
+      "description": "Compares strings without case sensitivity."
+    },
+    {
+      "function": "strncat",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strncat(char *string1, const char *string2, size_t count);",
+      "description": "Concatenates up to count characters of string2 to string1."
+    },
+    {
+      "function": "strncmp",
+      "system_include_file": "string.h",
+      "function_prototype": "int strncmp(const char *string1, const char *string2, size_t count);",
+      "description": "Compares up to count characters of string1 and string2."
+    },
+    {
+      "function": "strncpy",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strncpy(char *string1, const char *string2, size_t count);",
+      "description": "Copies up to count characters of string2 to string1."
+    },
+    {
+      "function": "strpbrk",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strpbrk(const char *string1, const char *string2);",
+      "description": "Locates the first occurrence in string1 of any character in string2."
+    },
+    {
+      "function": "strptime4",
+      "system_include_file": "time.h",
+      "function_prototype": "char *strptime (const char *buf, const char *format, struct tm *tm);",
+      "description": "Date and time conversion"
+    },
+    {
+      "function": "strrchr",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strrchr(const char *string, int c);",
+      "description": "Locates the last occurrence of c in string."
+    },
+    {
+      "function": "strspn",
+      "system_include_file": "string.h",
+      "function_prototype": "size_t strspn(const char *string1, const char *string2);",
+      "description": "Returns the length of the initial substring of string1 consisting of characters contained in string2."
+    },
+    {
+      "function": "strstr",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strstr(const char *string1, const char *string2);",
+      "description": "Returns a pointer to the first occurrence of string2 in string1."
+    },
+    {
+      "function": "strtod",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "double strtod(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a double precision value."
+    },
+    {
+      "function": "strtod32",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "_Decimal32 strtod32(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a single-precision decimal floating-point value."
+    },
+    {
+      "function": "strtod64",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "_Decimal64 strtod64(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a double-precision decimal floating-point value."
+    },
+    {
+      "function": "strtod128",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "_Decimal128 strtod128(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a quad-precision decimal floating-point value."
+    },
+    {
+      "function": "strtof",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "float strtof(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a float value."
+    },
+    {
+      "function": "strtok",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strtok(char *string1, const char *string2);",
+      "description": "Locates the next token in string1 delimited by the next character in string2."
+    },
+    {
+      "function": "strtok_r",
+      "system_include_file": "string.h",
+      "function_prototype": "char *strtok_r(char *string, const char *seps, char **lasts);",
+      "description": "Locates the next token in string delimited by the next character in seps. (Restartable version of strtok.)"
+    },
+    {
+      "function": "strtol",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "long int strtol(const char *nptr, char **endptr, int base);",
+      "description": "Converts nptr to a signed long integer."
+    },
+    {
+      "function": "strtold",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "long double strtold(const char *nptr, char **endptr);",
+      "description": "Converts nptr to a long double value."
+    },
+    {
+      "function": "strtoul",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "unsigned long int strtoul(const char *string1, char **string2, int base);",
+      "description": "Converts string1 to an unsigned long integer."
+    },
+    {
+      "function": "strxfrm",
+      "system_include_file": "string.h",
+      "function_prototype": "size_t strxfrm(char *string1, const char *string2, size_t count);",
+      "description": "Converts string2 and places the result in string1. The conversion is determined by the program's current locale."
+    },
+    {
+      "function": "swprintf",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int swprintf(wchar_t *wcsbuffer, size_t n, const wchar_t *format,  arg-list);",
+      "description": "Formats and stores a series of wide characters and values into the wide-character buffer wcsbuffer."
+    },
+    {
+      "function": "swscanf",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int swscanf (const wchar_t *buffer, const wchar_t *format, arg-list)",
+      "description": "Reads data from buffer into the locations given by arg-list."
+    },
+    {
+      "function": "system",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int system(const char *string);",
+      "description": "Passes string to the system command analyzer."
+    },
+    {
+      "function": "tan",
+      "system_include_file": "math.h",
+      "function_prototype": "double tan(double x);",
+      "description": "Calculates the tangent of x."
+    },
+    {
+      "function": "tanh",
+      "system_include_file": "math.h",
+      "function_prototype": "double tanh(double x);",
+      "description": "Calculates the hyperbolic tangent of x."
+    },
+    {
+      "function": "time",
+      "system_include_file": "time.h",
+      "function_prototype": "time_t time(time_t *timeptr);",
+      "description": "Returns the current calendar time."
+    },
+    {
+      "function": "time64",
+      "system_include_file": "time.h",
+      "function_prototype": "time64_t time64(time64_t *timeptr);",
+      "description": "Returns the current calendar time."
+    },
+    {
+      "function": "tmpfile",
+      "system_include_file": "stdio.h",
+      "function_prototype": "FILE *tmpfile(void);",
+      "description": "Creates a temporary binary file and opens it."
+    },
+    {
+      "function": "tmpnam",
+      "system_include_file": "stdio.h",
+      "function_prototype": "char *tmpnam(char *string);",
+      "description": "Generates a temporary file name."
+    },
+    {
+      "function": "toascii",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int toascii(int c);",
+      "description": "Converts c to a character in the 7-bit US-ASCII character set."
+    },
+    {
+      "function": "tolower",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int tolower(int c);",
+      "description": "Converts c to lowercase."
+    },
+    {
+      "function": "toupper",
+      "system_include_file": "ctype.h",
+      "function_prototype": "int toupper(int c);",
+      "description": "Converts c to uppercase."
+    },
+    {
+      "function": "towctrans",
+      "system_include_file": "wctype.h",
+      "function_prototype": "wint_t towctrans(wint_t wc, wctrans_t desc);",
+      "description": "Translates the wide character wc based on the mapping described by desc."
+    },
+    {
+      "function": "towlower4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "wint_t towlower (wint_t wc);",
+      "description": "Converts uppercase letter to lowercase letter."
+    },
+    {
+      "function": "towupper4",
+      "system_include_file": "wctype.h",
+      "function_prototype": "wint_t towupper (wint_t wc);",
+      "description": "Converts lowercase letter to uppercase letter."
+    },
+    {
+      "function": "ungetc1",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int ungetc(int c, FILE *stream);",
+      "description": "Pushes c back onto the input stream."
+    },
+    {
+      "function": "ungetwc6",
+      "system_include_file": "stdio.h\n wchar.h",
+      "function_prototype": "wint_t ungetwc(wint_t wc, FILE *stream);",
+      "description": "Pushes the wide character wc back onto the input stream."
+    },
+    {
+      "function": "va_arg",
+      "system_include_file": "stdarg.h",
+      "function_prototype": "var_type va_arg(va_list arg_ptr, var_type);",
+      "description": "Returns the value of one argument and modifies arg_ptr to point to the next argument."
+    },
+    {
+      "function": "va_end",
+      "system_include_file": "stdarg.h",
+      "function_prototype": "void va_end(va_list arg_ptr);",
+      "description": "Facilitates normal return from variable argument list processing."
+    },
+    {
+      "function": "va_start",
+      "system_include_file": "stdarg.h",
+      "function_prototype": "void va_start(va_list arg_ptr, variable_name);",
+      "description": "Initializes arg_ptr for subsequent use by va_arg and va_end."
+    },
+    {
+      "function": "vfprintf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vfprintf(FILE *stream, const char *format, va_list arg_ptr);",
+      "description": "Formats and prints characters to the output stream using a variable number of arguments."
+    },
+    {
+      "function": "vfscanf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vfscanf(FILE *stream, const char *format, va_list arg_ptr);",
+      "description": "Reads data from a specified stream into locations given by a variable number of arguments."
+    },
+    {
+      "function": "vfwprintf6",
+      "system_include_file": "stdarg.h\n stdio.h\n wchar.h",
+      "function_prototype": "int vfwprintf(FILE *stream, const wchar_t *format, va_list arg);",
+      "description": "Equivalent to fwprintf, except that the variable argument list is replaced by arg."
+    },
+    {
+      "function": "vfwscanf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vfwscanf(FILE *stream, const wchar_t *format, va_list arg_ptr);",
+      "description": "Reads wide data from a specified stream into locations given by a variable number of arguments."
+    },
+    {
+      "function": "vprintf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vprintf(const char *format, va_list arg_ptr);",
+      "description": "Formats and prints characters to stdout using a variable number of arguments."
+    },
+    {
+      "function": "vscanf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vscanf(const char *format, va_list arg_ptr);",
+      "description": "Reads data from stdin into locations given by a variable number of arguments."
+    },
+    {
+      "function": "vsprintf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vsprintf(char *target-string, const char *format, va_list arg_ptr);",
+      "description": "Formats and stores characters in a buffer using a variable number of arguments."
+    },
+    {
+      "function": "vsnprintf",
+      "system_include_file": "stdio.h",
+      "function_prototype": "int vsnprintf(char *outbuf, size_t n, const char*, va_list);",
+      "description": "Same as vsprintf except that the function will stop after n characters have been written to outbuf."
+    },
+    {
+      "function": "vsscanf",
+      "system_include_file": "stdio.h stdarg.h",
+      "function_prototype": "int vsscanf(const char*buffer, const char *format, va_list arg_ptr);",
+      "description": "Reads data from a buffer into locations given by a variable number of arguments."
+    },
+    {
+      "function": "vswprintf",
+      "system_include_file": "stdarg.h\n wchar.h",
+      "function_prototype": "int vswprintf(wchar_t *wcsbuffer,  size_t n, const wchar_t *format,  va_list arg);",
+      "description": "Formats and stores a series of wide characters and values in the buffer wcsbuffer."
+    },
+    {
+      "function": "vswscanf",
+      "system_include_file": "stdio.h wchar.h",
+      "function_prototype": "int vswscanf(const wchar_t *buffer, const wchar_t *format, va_list arg_ptr);",
+      "description": "Reads wide data from a buffer into locations given by a variable number of arguments."
+    },
+    {
+      "function": "vwprintf6",
+      "system_include_file": "stdarg.h\n wchar.h",
+      "function_prototype": "int vwprintf(const wchar_t *format, va_list arg);",
+      "description": "Equivalent to wprintf, except that the variable argument list is replaced by arg."
+    },
+    {
+      "function": "vwscanf",
+      "system_include_file": "stdio.h wchar.h",
+      "function_prototype": "int vwscanf(const wchar_t *format, va_list arg_ptr);",
+      "description": "Reads wide data from stdin into locations given by a variable number of arguments."
+    },
+    {
+      "function": "wcrtomb4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wcrtomb (char *s, wchar_t wchar, mbstate_t *pss);",
+      "description": "Converts a wide character to a multibyte character. (Restartable version of wctomb.)"
+    },
+    {
+      "function": "wcscat",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcscat(wchar_t  *string1, const wchar_t  *string2);",
+      "description": "Appends a copy of the string pointed to by string2 to the end of the string pointed to by string1."
+    },
+    {
+      "function": "wcschr",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcschr(const wchar_t  *string, wchar_t  character);",
+      "description": "Searches the wide-character string pointed to by string for the occurrence of character."
+    },
+    {
+      "function": "wcscmp",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wcscmp(const wchar_t  *string1, const wchar_t  *string2);",
+      "description": "Compares two wide-character strings, *string1 and *string2."
+    },
+    {
+      "function": "wcscoll4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wcscoll (const wchar_t *wcs1, const wchar_t *wcs2);",
+      "description": "Compares two wide-character strings using the collating sequence in the current locale."
+    },
+    {
+      "function": "wcscpy",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcscpy(wchar_t  *string1, const wchar_t  *string2);",
+      "description": "Copies the contents of *string2 (including the ending wchar_t  null character) into *string1."
+    },
+    {
+      "function": "wcscspn",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcscspn(const wchar_t  *string1, const wchar_t  *string2);",
+      "description": "Determines the number of wchar_t  characters in the initial segment of the string pointed to by *string1 that do not appear in the string pointed to by *string2."
+    },
+    {
+      "function": "wcsftime",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcsftime(wchar_t *wdest, size_t maxsize, const wchar_t *format,  const struct tm *timeptr);",
+      "description": "Converts the time and date specification in the timeptr structure into a wide-character string."
+    },
+    {
+      "function": "wcslen",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcslen(const wchar_t  *string);",
+      "description": "Computes the number of wide-characters in the string pointed to by string."
+    },
+    {
+      "function": "wcslocaleconv",
+      "system_include_file": "locale.h",
+      "function_prototype": "struct wcslconv *wcslocaleconv(void);",
+      "description": "Formats numeric quantities in struct wcslconv according to the current locale."
+    },
+    {
+      "function": "wcsncat",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcsncat(wchar_t  *string1, const wchar_t  *string2, size_t count);",
+      "description": "Appends up to count wide characters from string2 to the end of string1, and appends a wchar_t null character to the result."
+    },
+    {
+      "function": "wcsncmp",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wcsncmp(const wchar_t  *string1, const wchar_t  *string2, size_t count);",
+      "description": "Compares up to count wide characters in string1 to  string2."
+    },
+    {
+      "function": "wcsncpy",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcsncpy(wchar_t  *string1, const wchar_t  *string2, size_t count);",
+      "description": "Copies up to count wide characters from string2 to  string1."
+    },
+    {
+      "function": "wcspbrk",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcspbrk(const wchar_t  *string1, const wchar_t  *string2);",
+      "description": "Locates the first occurrence in the string pointed to by string1 of any wide characters from the string pointed to by string2."
+    },
+    {
+      "function": "wcsptime",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcsptime ( const wchar_t *buf, const wchar_t *format, struct tm *tm );",
+      "description": "Date and time conversion. Equivalent to strptime(), except that it uses wide characters."
+    },
+    {
+      "function": "wcsrchr",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcsrchr(const wchar_t  *string, wchar_t  character);",
+      "description": "Locates the last occurrence of  character in the string pointed to by string."
+    },
+    {
+      "function": "wcsrtombs4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcsrtombs (char *dst, const wchar_t **src, size_t len, mbstate_t *ps);",
+      "description": "Converts wide character string to multibyte string. (Restartable version of wcstombs.)"
+    },
+    {
+      "function": "wcsspn",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcsspn(const wchar_t *string1, const wchar_t *string2);",
+      "description": "Computes the number of wide characters in the initial segment of the string pointed to by string1, which consists entirely of wide characters from the string pointed to by string2."
+    },
+    {
+      "function": "wcsstr",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcsstr(const wchar_t *wcs1, const wchar_t *wcs2);",
+      "description": "Locates the first occurrence of wcs2  in wcs1."
+    },
+    {
+      "function": "wcstod",
+      "system_include_file": "wchar.h",
+      "function_prototype": "double wcstod(const wchar_t *nptr, wchar_t **endptr);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to a double value."
+    },
+    {
+      "function": "wcstod32",
+      "system_include_file": "wchar.h",
+      "function_prototype": "_Decimal32 wcstod32(const wchar_t *nptr, wchar_t **endptr);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to a single-precision decimal floating-point value."
+    },
+    {
+      "function": "wcstod64",
+      "system_include_file": "wchar.h",
+      "function_prototype": "_Decimal64 wcstod64(const wchar_t *nptr, wchar_t **endptr);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to a double-precision decimal floating-point value."
+    },
+    {
+      "function": "wcstod128",
+      "system_include_file": "wchar.h",
+      "function_prototype": "_Decimal128 wcstod128(const wchar_t *nptr, wchar_t **endptr);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to a quad-precision decimal floating-point value."
+    },
+    {
+      "function": "wcstok",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wcstok(wchar_t *wcs1, const wchar_t *wcs2, wchar_t **ptr)",
+      "description": "Breaks wcs1 into a sequence of tokens, each of which is delimited by a wide character from the wide string pointed to by wcs2."
+    },
+    {
+      "function": "wcstol",
+      "system_include_file": "wchar.h",
+      "function_prototype": "long int wcstol(const wchar_t *nptr, wchar_t **endptr, int base);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to a long integer value."
+    },
+    {
+      "function": "wcstombs",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "size_t wcstombs(char *dest, const wchar_t *string, size_t count);",
+      "description": "Converts the wchar_t string into a multibyte string dest."
+    },
+    {
+      "function": "wcstoul",
+      "system_include_file": "wchar.h",
+      "function_prototype": "unsigned long int wcstoul(const wchar_t  *nptr, wchar_t **endptr, int  base);",
+      "description": "Converts the initial portion of the wide-character string pointed to by nptr to an unsigned long integer value."
+    },
+    {
+      "function": "wcsxfrm4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "size_t wcsxfrm (wchar_t *wcs1, const wchar_t *wcs2, size_t n);",
+      "description": "Transforms a wide-character string to values which represent character collating weights and places the resulting wide-character string into an array."
+    },
+    {
+      "function": "wctob",
+      "system_include_file": "stdarg.h\n wchar.h",
+      "function_prototype": "int wctob(wint_t wc);",
+      "description": "Determines whether wc corresponds to a member of the extended character set whose multibyte character representation is a single byte when in the initial shift state."
+    },
+    {
+      "function": "wctomb",
+      "system_include_file": "stdlib.h",
+      "function_prototype": "int wctomb(char *string, wchar_t character);",
+      "description": "Converts the wchar_t value of character into a multibyte string."
+    },
+    {
+      "function": "wctrans",
+      "system_include_file": "wctype.h",
+      "function_prototype": "wctrans_t wctrans(const char *property);",
+      "description": "Constructs a value with type wctrans_t that describes a mapping between wide characters identified by the string argument property."
+    },
+    {
+      "function": "wctype4",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wctype_t wctype (const char  *property);",
+      "description": "Obtains handle for character property classification."
+    },
+    {
+      "function": "wcwidth",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wcswidth(const wchar_t   *pwcs, size_t n);",
+      "description": "Determine the display width of a wide character string."
+    },
+    {
+      "function": "wmemchr",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wmemchr(const wchar_t *s, wchar_t c, size_t n);",
+      "description": "Locates the first occurrence of c in the initial n wide characters of the object pointed to by  s."
+    },
+    {
+      "function": "wmemcmp",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wmemcmp(const wchar_t *s1, const wchar_t *s2, size_t n);",
+      "description": "Compares the first n wide characters of the object pointed to by s1 to the first  n characters of the object pointed to by s2."
+    },
+    {
+      "function": "wmemcpy",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wmemcpy(wchar_t *s1, const wchar_t *s2, size_t n);",
+      "description": "Copies n wide characters from the object pointed to by s2 to the object pointed to by  s1."
+    },
+    {
+      "function": "wmemmove",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wmemmove(wchar_t *s1, const wchar_t *s2, size_t n);",
+      "description": "Copies n wide characters from the object pointed to by s2 to the object pointed to by  s1."
+    },
+    {
+      "function": "wmemset",
+      "system_include_file": "wchar.h",
+      "function_prototype": "wchar_t *wmemset(wchar_t *s, wchar_t c, size_t n);",
+      "description": "Copies the value of c into each of the first n wide characters of the object pointed to by s."
+    },
+    {
+      "function": "wprintf6",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wprintf(const wchar_t  *format,  arg-list);",
+      "description": "Equivalent to fwprintf with the argument stdout interposed before the arguments to wprintf."
+    },
+    {
+      "function": "wscanf6",
+      "system_include_file": "wchar.h",
+      "function_prototype": "int wscanf(const wchar_t  *format,  arg-list);",
+      "description": "Equivalent to fwscanf with the argument stdin interposed before the arguments of wscanf."
+    },
+    {
+      "function": "y0",
+      "system_include_file": "math.h",
+      "function_prototype": "double y0(double x);",
+      "description": "Calculates the Bessel function value of the second kind of order 0."
+    },
+    {
+      "function": "y1",
+      "system_include_file": "math.h",
+      "function_prototype": "double y1(double x);",
+      "description": "Calculates the Bessel function value of the second kind of order 1."
+    },
+    {
+      "function": "yn",
+      "system_include_file": "math.h",
+      "function_prototype": "double yn(int n, double x);",
+      "description": "Calculates the Bessel function value of the second kind of order n."
+    }
+   ]
